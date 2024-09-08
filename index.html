@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align:center" > DOWNLOAD RESUME BY ARSALAN MEO</h1>
+  
+    <!-- Resume Form -->
+    <div class="resume-container">
+      <form id="resume-form">
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+          <h2>Personal Information</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+          <h2>Education</h2>
+          <div class="form-group">
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" placeholder="Enter your degree">
+          </div>
+          <div class="form-group">
+            <label for="school">School/University:</label>
+            <input type="text" id="school" name="school" placeholder="Enter your school/university">
+          </div>
+          <div class="form-group">
+            <label for="education-description">Education Description:</label>
+            <textarea id="education-description" name="education-description" rows="4" placeholder="Describe your education"></textarea>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="form-group">
+            <input type="text" id="skill1" name="skill1" placeholder="Enter skill 1">
+          </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+          <h2>Work Experience</h2>
+          <div class="form-group">
+            <label for="work-description1">Work Experience Description:</label>
+            <textarea id="work-description1" name="work-description1" rows="4" placeholder="Describe your work experience"></textarea>
+          </div>
+          <!-- Add this in Personal Information Section -->
+<div class="form-group">
+  <label for="profile-pic">Profile Picture:</label>
+  <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+</div>
+
+        </section>
+
+        <button type="submit">Generate Resume</button>
+      </form>
+    </div>
+
+    <!-- Container for the generated resume -->
+    <div id="generated-resume" class="resume-container" style="display:none;">
+      <h2>Your Resume</h2>
+      <p><strong>Name:</strong> <span id="display-name"></span></p>
+      <p><strong>Email:</strong> <span id="display-email"></span></p>
+      <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+      <p><strong>Location:</strong> <span id="display-location"></span></p>
+      <h3>Education</h3>
+      <p><strong>Degree:</strong> <span id="display-degree"></span></p>
+      <p><strong>School/University:</strong> <span id="display-school"></span></p>
+      <p><strong>Education Description:</strong></p>
+      <p id="display-education-description"></p>
+      <h3>Skills</h3>
+      <p id="display-skills"></p>
+      <h3>Work Experience</h3>
+      <p id="display-work-description"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
